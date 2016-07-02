@@ -1,0 +1,84 @@
+.treePicker-container, .dropdown-container .node-children, .dropdown-container .node-container {
+  position: relative;
+}
+
+.treePicker-container {
+  width: 50%;
+  margin: auto;
+  top: 30px;
+}
+
+.treePicker-container .treePicker-input {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.dropdown-container .node-children {
+  padding-left: 30px;
+}
+
+.dropdown-container .node-children .node-container {
+  list-style: none;
+}
+
+.node-img, .node-head-content {
+  display: inline-block;
+}
+
+.node-img {
+  position: relative;
+  top: -2px;
+}
+
+.dropdown-container {
+  width: 50%;
+  margin: auto;
+  border: 1px solid black;
+  height: 250px;
+  overflow: scroll;
+  display: none;
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+}
+
+.dropdown-container .node-container::before, .dropdown-container .node-container::after {
+  content: "";
+  position: absolute;
+  left: -22px;
+}
+
+.dropdown-container .node-container::before {
+  border-top: 1px solid black;
+  top: 9px;
+  width: 15px;
+  height: 0;
+}
+.dropdown-container .node-head:hover {
+  background-color: #b6b5b5;
+  cursor: pointer;
+}
+
+.dropdown-container .node-container::after {
+  border-left: 1px solid black;
+  height: 100%;
+  width: 0px;
+  top: 2px;
+}
+
+.dropdown-container .node-children > .node-container:last-child::after {
+  height: 8px;
+}
+
+.dropdown-container .hide {
+  display: none;
+}
+
+.dropdown-container .show {
+  display: block;
+}
+
+.dropdown-container .node-container .node-children {
+  display: none;
+}

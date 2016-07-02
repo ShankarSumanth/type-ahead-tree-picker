@@ -1,0 +1,26 @@
+{
+	"name": "type-ahead-treepicker",
+	"version": "1.0.0",
+	"description": "A tree picker dropdown with type ahead feature",
+	"main": "index.js",
+	"directories": {
+		"doc": "doc"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Sumanth Shankar",
+	"license": "ISC",
+	"devDependencies": {
+		"del": "^2.2.1",
+		"gulp": "^3.9.1",
+		"gulp-concat": "^2.6.0",
+		"gulp-declare": "^0.3.0",
+		"gulp-handlebars": "^4.0.0",
+		"gulp-minify": "0.0.12",
+		"gulp-rename": "^1.2.2",
+		"gulp-uglify": "^1.5.4",
+		"handlebars": "^4.0.5",
+		"pump": "^1.0.1"
+	}
+}

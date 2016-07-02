@@ -1,0 +1,21 @@
+  <ul class="node-children">
+    {{#each data}}
+      <li class="node-container" data-id={{id}}>
+          <div class="node-head">
+              <div class="node-img">
+                {{#if node}}
+                  <img src="img/plus.png" class="node" alt="node" width="15" height="15" />
+                  {{else}}
+                  <img src="img/minus.png" class="leaf" alt="leaf" width="15" height="15" />
+                {{/if}}
+              </div>
+              <div class="node-head-content">
+                  {{label}}
+              </div>
+          </div>
+          {{#if data}}
+            {{> tree}}
+          {{/if}}
+      </li>
+      {{/each}}
+  </ul>
